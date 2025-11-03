@@ -1,0 +1,8 @@
+{
+  "crons": [
+    {
+      "path": "/api/run-margin-leak",
+      "schedule": "30 13 * * 1"
+    }
+  ]
+}
