@@ -1,12 +1,18 @@
-"use client";
-import RexagenPowerhouseDashboard from "@/src/rexagen_powerhouse_dashboard";
-import { useEffect } from "react";
-import { startBrowserHeartbeat } from "@/src/services/scheduler";
-
-export default function Page() {
-  useEffect(() => {
-    const stop = startBrowserHeartbeat();
-    return () => stop();
-  }, []);
-  return <RexagenPowerhouseDashboard />;
+export default function Home() {
+  return (
+    <div style={{
+      display: "flex",
+      height: "100vh",
+      alignItems: "center",
+      justifyContent: "center",
+      flexDirection: "column",
+      fontFamily: "Arial",
+      textAlign: "center",
+      backgroundColor: "#f5f5f5"
+    }}>
+      <h1>🚀 Rexagen Powerhouse Dashboard</h1>
+      <p>Your deployment is active and ready for data modules.</p>
+      <p>Next step: connect your real Rexagen dashboard components.</p>
+    </div>
+  );
 }
