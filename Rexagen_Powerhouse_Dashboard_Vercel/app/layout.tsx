@@ -1,8 +1,13 @@
-export const metadata = { title: "Rexagen Powerhouse Dashboard" };
+export const metadata = {
+  title: "Rexagen Powerhouse Dashboard",
+  description: "Next-gen Sales Ops AI Interface",
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body style={{ margin: 0 }}>{children}</body>
+      <body>{children}</body>
     </html>
   );
 }
+
